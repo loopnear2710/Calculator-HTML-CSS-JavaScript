@@ -1,11 +1,79 @@
-# Calculator
+#  Calculator (HTML + CSS + JavaScript)
 
-Простой калькулятор на HTML, CSS и JavaScript.
+Простой, но функциональный калькулятор, созданный с использованием **HTML**, **CSS** и **Vanilla JavaScript**.  
+Проект реализует базовые математические операции и имитирует поведение классического калькулятора.
 
-## Стек
+---
 
-- HTML
+##  Демонстрация
 
-- CSS
+> Калькулятор поддерживает:
+- Сложение ➕
+- Вычитание ➖
+- Умножение ✖️
+- Деление ➗
+- Десятичные числа
+- Очистку (AC)
+- Непрерывные вычисления
 
-- JavaScript
+---
+
+##  Интерфейс
+
+Калькулятор имеет современный минималистичный дизайн:
+
+- Темный дисплей
+- Кнопки с hover-эффектами
+- Цветовое разделение операторов и результата
+
+---
+
+## Технологии
+
+- HTML5
+- CSS3 (Grid Layout, Flexbox)
+- JavaScript (ES6+)
+- DOM Manipulation
+- Dataset API
+
+---
+
+## Структура проекта
+
+Calculator-HTML-CSS-Java…
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+├── index.html
+└── README.md
+
+---
+
+## ⚙️ Как работает
+
+Логика калькулятора построена на обработке событий кнопок:
+
+- Числа добавляются в дисплей
+- Операторы сохраняются в `dataset`
+- Вычисления выполняются через функцию `calculate()`
+- Поддерживается цепочка операций
+- Реализована защита от деления на 0
+
+---
+
+##  Основная логика
+
+```js
+function calculate(n1, operator, n2) {
+    const first = parseFloat(n1);
+    const second = parseFloat(n2);
+
+    if (operator === 'add') return first + second;
+    if (operator === 'subtract') return first - second;
+    if (operator === 'multiply') return first * second;
+    if (operator === 'divide') return second === 0 ? 'Error' : first / second;
+}
