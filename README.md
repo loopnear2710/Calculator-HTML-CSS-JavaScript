@@ -65,6 +65,28 @@ Calculator-HTML-CSS-Java…
 
 ---
 
+ ## Как запустить 
+
+1. Клонируйте репозиторий
+
+   git clone https://github.com/loopnear2710/MyCalculator.git
+
+2. Перейдите в папку проекта
+
+cd ИМЯ РЕПОЗИТОРИЯ 
+
+3. Откройте файл index.html в любом современном браузере.
+
+Для удобной разработки рекомендуется использовать расширение Live Server в Visual Studio Code.
+
+---
+
+##Deployment 
+
+Проект доступен по ссылке:
+
+https://my-repository-sable-rho.vercel.app/
+
 ##  Основная логика
 
 ```js
